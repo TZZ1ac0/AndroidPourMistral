@@ -19,14 +19,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x ./gradlew
-
       - name: Build with Gradle
-        run: ./gradlew build
+        run: gradle build
 
       - name: Run unit tests
-        run: ./gradlew test
+        run: gradle test
 
       - name: Upload test results
         if: always()
