@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.AndroidPourMistral" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <item name="colorPrimaryContainer">@color/purple_700</item>
-        <item name="colorOnPrimaryContainer">@color/white</item>
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+    <style name="Theme.AndroidPourMistral" parent="Theme.Material3.DayNight">
+        <!-- Primary brand colors. -->
+        <item name="colorPrimary">@color/md_sys_color_primary</item>
+        <item name="colorOnPrimary">@color/md_sys_color_on_primary</item>
+        <item name="colorPrimaryContainer">@color/md_sys_color_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/md_sys_color_on_primary_container</item>
+        
+        <!-- Secondary brand colors. -->
+        <item name="colorSecondary">@color/md_sys_color_secondary</item>
+        <item name="colorOnSecondary">@color/md_sys_color_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/md_sys_color_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/md_sys_color_on_secondary_container</item>
+        
+        <!-- Tertiary brand colors. -->
+        <item name="colorTertiary">@color/md_ref_pal_tertiary</item>
+        <item name="colorOnTertiary">@color/md_ref_pal_on_tertiary</item>
+        
+        <!-- Error colors. -->
+        <item name="colorError">@color/md_ref_pal_error</item>
+        <item name="colorOnError">@color/md_ref_pal_on_error</item>
+        
+        <!-- Surface colors. -->
+        <item name="colorSurface">@color/md_ref_pal_surface</item>
+        <item name="colorOnSurface">@color/md_ref_pal_on_surface</item>
+        
+        <!-- Background colors. -->
+        <item name="colorBackground">@color/md_ref_pal_background</item>
+        <item name="colorOnBackground">@color/md_ref_pal_on_background</item>
     </style>
 </resources>
