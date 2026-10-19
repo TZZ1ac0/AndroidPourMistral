@@ -1,6 +1,4 @@
 @rem
-@echo off
-@rem
 @rem Copyright 2015 the original author or authors.
 @rem
 @rem Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,8 +30,7 @@
 @rem Check if the script is called with a relative path
 @if not "%SCRIPT_DIR%"=="%~dp0" (
     @rem If relative path, set the script directory to the current directory
-    @set SCRIPT_DIR=%LOCAL_DIR%
-)
+    @set SCRIPT_DIR=%LOCAL_DIR%)
 
 @rem Set APP_HOME to the directory containing the script
 @set APP_HOME=%SCRIPT_DIR%
