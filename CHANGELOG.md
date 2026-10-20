@@ -7,6 +7,21 @@ et ce projet adhère à [Semantic Versioning](https://semver.org/lang/fr/spec/v2
 
 ---
 
+## [1.1.0] - 2024-10-20
+
+### ✨ **Ajouté**
+- Ajout d'une TopAppBar avec titre "Mistral miroir Android"
+- Menu d'options (3 points verticaux) avec commandes :
+  - Caméra avant
+  - Caméra arrière
+  - Quitter (ferme l'application)
+- Intégration des icônes Material Design
+
+### 🛠️ **Technologies**
+- Material Icons Extended 1.5.3
+
+---
+
 ## [1.0.0] - 2024-10-19
 
 ### ✨ **Ajouté**
@@ -18,7 +33,7 @@ et ce projet adhère à [Semantic Versioning](https://semver.org/lang/fr/spec/v2
 - Thème Material3 personnalisé (couleurs, typographie)
 - Icônes de lancement adaptatives
 
-### 📌 **Technologies**
+### 🛠️ **Technologies**
 - Kotlin 1.9.20
 - Jetpack Compose 1.5.3
 - Android Gradle Plugin 8.3.0
@@ -29,10 +44,11 @@ et ce projet adhère à [Semantic Versioning](https://semver.org/lang/fr/spec/v2
 ## [Non publié]
 
 ### ✨ **À venir**
-- Ajout de nouvelles fonctionnalités (à définir)
+- Implémentation des fonctionnalités caméra
 - Amélioration de l'UI/UX
 - Intégration de tests d'intégration
 
 ---
 
+[1.1.0]: https://github.com/TZZ1ac0/AndroidPourMistral/releases/tag/v1.1.0
 [1.0.0]: https://github.com/TZZ1ac0/AndroidPourMistral/releases/tag/v1.0.0
