@@ -1,0 +1,52 @@
+name: Android CI
+
+on:
+  push:
+    branches: [ main, feat/** ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: 8.2
+
+      - name: Build with Gradle
+        run: gradle build
+
+      - name: Run unit tests
+        run: gradle test
+
+      - name: Build APK
+        run: gradle assembleDebug
+
+      - name: Rename APK
+        run: mv app/build/outputs/apk/debug/app-debug.apk app/build/outputs/apk/debug/AndroidPourMistral-debug.apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: AndroidPourMistral-debug-apk
+          path: app/build/outputs/apk/debug/AndroidPourMistral-debug.apk
+          retention-days: 7
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: AndroidPourMistral-test-results
+          path: app/build/reports/tests/
+          retention-days: 7
